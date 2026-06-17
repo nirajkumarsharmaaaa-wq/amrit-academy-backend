@@ -4,7 +4,7 @@ const {
   getMyEnrollments, 
   markLessonComplete,
   getAllEnrollments 
-} = require('../controllers/enrollmentController');
+} = require('../Controllers/enrollmentController');
 const { protect, authorize } = require('../middleware/authMiddleware');
 
 const router = express.Router();

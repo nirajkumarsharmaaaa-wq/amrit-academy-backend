@@ -6,7 +6,7 @@ const {
   updateCourse, // Naya import
   deleteCourse, // Naya import
   addLesson 
-} = require('../controllers/courseController');
+} = require('../Controllers/courseController');
 const { protect, authorize } = require('../middleware/authMiddleware');
 
 const router = express.Router();
