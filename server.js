@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://amrit-academy-frontend.vercel.app/' })); // Vercel ka URL yahan daalein
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB Connected Successfully'))
